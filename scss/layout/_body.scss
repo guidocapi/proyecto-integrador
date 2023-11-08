@@ -1,0 +1,10 @@
+@use "./abstracts/variables" as var;
+@use "./abstracts/mixins" as mix;
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
