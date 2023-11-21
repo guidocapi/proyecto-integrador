@@ -1,9 +1,18 @@
-@use "./abstracts/variables" as var;
-@use "./abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 
-.header{
+.header {
     grid-area: header;
-    h1{
-        color: red;
+
+    &__logo {
+        position: absolute;
+        height: 10vh;
+        margin: 2vh;
+        z-index: 2;
     }
+
+    // &__title {
+    //     font-family: Super Plants;
+    //     color: var.$textColorPrimary;
+    // }
 }

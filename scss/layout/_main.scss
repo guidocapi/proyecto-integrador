@@ -1,2 +1,54 @@
-@use "./abstracts/variables" as var;
-@use "./abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.main {
+    grid-area: main;
+
+    .section {
+        width: 100%;
+
+        &--slider {
+            overflow: hidden;
+        }
+
+        &__searcher {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 2vw;
+            background: linear-gradient(90deg, rgb(231, 231, 231), rgb(136, 136, 136));
+            height: 8vh;
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+
+            input {
+                border-radius: 15px;
+                height: 5vh;
+                text-align: center;
+            }
+        }
+
+        &__additem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+            background: linear-gradient(90deg, rgb(231, 231, 231), rgb(136, 136, 136));
+            height: 8vh;
+
+
+
+        }
+
+
+        &--products {
+            padding-top: 2vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1vw;
+        }
+    }
+}

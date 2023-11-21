@@ -4,61 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Esta pagina esta dedicada a ble">
-    <meta name="keywords" content="tienda, proyecto, proyecto integrador, 30 palabras">
-    <meta name="Author" content="Guido Riccardi">
-
+    <meta name="description"
+        content="Esta página web es una tienda que corresponde al proyecto Integrador del Bootcamp de Full Stack">
+    <meta name="keywords" content="tienda, proyecto, integrador, bootcamp, full stack, store, proyect, integrative">
+    <meta name="author" content="Sergio Regalado Alessi">
     <title>Mi Tienda</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-</head>
 
 <body class="home">
     <header class="header">
-        <img src="#" alt="Logo">
-        <h1>Mi primer tienda</h1>
-
+        <img class="header__logo" src="./images/logo.png" alt="Logo de Pazatillas">
         <nav class="navbar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
+            <ul class="navbar__menu">
+                <li><a class="navbar__item navbar__item--active" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <div>
-                <div>
-                    <h4>Primer Slider</h4>
-                    <img src="./images/img01.jpg" alt="x">
-                    <h4>Seg Slider</h4>
-                    <img src="./images/img02.jpg" alt="x">
-                    <h4>Terc Slider</h4>
-                    <img src="./images/img03.jpg" alt="x">
+
+    <main class="main">
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h5 class="slider__title">Todas las Pazatillas vienen<br>con una caja</h5>
+                    <img class="slider__image" src="./images/slides/slide01.jpg"
+                        alt="Gente haciendo gimnasia y una caja de zapatos">
+                </div>
+                <div class="slider__two">
+                    <h5 class="slider__title">Ideales en un<br>ataque zombie</h5>
+                    <img class="slider__image" src="./images/slides/slide02.jpg" alt="Deportistas y un zombie">
+                </div>
+                <div class="slider__three">
+                    <h5 class="slider__title">Algunas modelos<br>usan Pazatillas</h5>
+                    <img class="slider__image" src="./images/slides/slide03.jpg" alt="3 Modelos posando">
                 </div>
             </div>
         </section>
-        <section>
-            <h3>Galeria de prod</h3>
-            <figure>
-                <img src="" alt="Importante porner la desc">
-                <h4>Nombre del primer prod</h4>
-                <p>descripcion del prodc</p>
-                <div>
-                    <button>Agregar</button>
-                    <span>0</span>
-                    <button>Quitar</button>
+
+        <div class="section__searcher">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Ingresa tu busqueda">
+        </div>
+
+        <section class="section section--products">
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/1.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS DURAMO SL 2.0</h4>
+                <p class="card__text card__text--short">Mantené tus pies cómodos y tu estilo impecable en todo momento
+                    con estas zapatillas adidas. Usalas con tus shorts de running favoritos para lucir un look deportivo
+                    y casual. El exterior de malla ayuda a mantener tus pies frescos, mientras que la amortiguación
+                    ultraliviana te ofrece soporte en cada uno de tus pasos.</p>
+                <span class="card__price">54.399</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
                 </div>
             </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/2.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS ULTRABOUNCE</h4>
+                <p class="card__text card__text--short">Usalas con tus shorts de running favoritos para lucir un look
+                    deportivo y casual. El exterior de malla ayuda a mantener tus pies frescos, mientras que la
+                    amortiguación ultraliviana te ofrece soporte en cada uno de tus pasos.</p>
+                <span class="card__price">70.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/3.png" alt="Zapatillas azules">
+                <h4 class="card__title">COURTJAM CONTROL</h4>
+                <p class="card__text card__text--short">Mantené a tu oponente exactamente donde querés con estas
+                    zapatillas adidas creadas para darte el control en canchas de
+                    arcilla. Estas zapatillas CourtJam Control tienen un exterior de malla transpirable y una cómoda
+                    mediasuela Bounce para
+                    asegurar que tu mente esté enfocada en tu juego</p>
+                <span class="card__price">74.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/4.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS INDOOR LIGRA 7</h4>
+                <p class="card__text card__text--short">Creadas para rendir en todo tipo de canchas, estas zapatillas
+                    adidas Ligra 7 te ayudarán a mejorar tu juego en cancha
+                    cubierta</p>
+                <span class="card__price">59.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/5.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS RUNFALCON 3</h4>
+                <p class="card__text card__text--short">Estas versátiles zapatillas de running adidas son perfectas para
+                    correr en el parque y después tomar un café con tus
+                    amigos</p>
+                <span class="card__price">51.9990</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/6.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS SUPERNOVA 2.0</h4>
+                <p class="card__text card__text--short">Este producto se ha fabricado con el fin de reducir la huella de
+                    carbono al menos en un 10% con respecto a su versión
+                    anterior.</p>
+                <span class="card__price">77.799</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/7.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS ULTRABOOST LIGHT 23</h4>
+                <p class="card__text card__text--short">Descubre una energía épica con las nuevas Ultraboost Light, las
+                    Ultraboost más ligeras que hemos creado. La magia está
+                    en la mediasuela Light BOOST</p>
+                <span class="card__price">146.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/8.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS SOLARGLIDE 6</h4>
+                <p class="card__text card__text--short">Corré más lejos en menos tiempo. Las zapatillas de running
+                    adidas Solarglide 6 te proporcionan la comodidad y energía
+                    que necesitas para alcanzar tus objetivos. Incorpora la tecnología BOOST.</p>
+                <span class="card__price">120.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/9.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS ADIZERO SL</h4>
+                <p class="card__text card__text--short">Cuando se trata de alcanzar tus metas, cada segundo cuenta. Ya
+                    sea para entrenar o para competir, un rendimiento
+                    excelente requiere de prendas de alta tecnología optimizadas para la velocidad.</p>
+                <span class="card__price">99.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/10.png" alt="Zapatillas azules">
+                <h4 class="card__title">ZAPATILLAS QUESTAR</h4>
+                <p class="card__text card__text--short">Mantené a tu oponente exactamente donde querés con estas
+                    zapatillas adidas creadas para darte el control en canchas de
+                    arcilla. Estas zapatillas CourtJam Control tienen un exterior de malla transpirable y una cómoda
+                    mediasuela Bounce para
+                    asegurar que tu mente esté enfocada en tu juego</p>
+                <span class="card__price">70.999</span>
+                <div class="button button--group">
+                    <button class="button button--sm button--confirm material-symbols-outlined">add_circle</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger material-symbols-outlined">cancel</button>
+                </div>
+            </figure>
+
         </section>
+        
+            <div class="section__additem">
+                <button class="button button--sm button--additem material-symbols-outlined">add_circle</button>
+            </div>
+
+        
     </main>
-    <footer>
-        <span>&copy; 2023 Todos los derechos reservados</span>
+
+    <footer class="footer">
+        <p class="footer_text">&copy;2023 Javascript</p>
     </footer>
 
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>

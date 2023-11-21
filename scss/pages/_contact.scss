@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.header {
+    &__image {
+        margin-top: 3vh;
+        width: 100%;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+&__consult{
+    
+}
+
+    div{
+        margin: 1vh;
+    }
+}

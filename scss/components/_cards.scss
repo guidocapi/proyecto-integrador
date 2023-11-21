@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.card {
+    padding: 1vw;
+    background: linear-gradient(rgb(122, 248, 227), rgb(214, 214, 214));
+    width: 23vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__image {
+        width: 22vw;
+    }
+
+                &__image:hover {
+                    scale: 1.1;
+                    rotate: 7deg;
+                }
+
+    &__text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    &__title {
+        color: rgb(0, 0, 0);
+    }
+
+    &__count {
+        background-color: white;
+        border: 0.0625rem solid rgb(0, 0, 0);
+        border-radius: 1rem;
+        box-shadow: 0px 0px 3px black;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        padding-top: 0.35rem;
+    }
+
+    &__price {
+        display: block;
+        font-weight: bold;
+
+        &::before {
+            content: "$ ";
+        }
+    }
+}

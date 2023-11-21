@@ -1,2 +1,10 @@
-@use "./abstracts/variables" as var;
-@use "./abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.footer {
+    grid-area: footer;
+    background: linear-gradient(90deg, rgb(231, 231, 231), rgb(136, 136, 136));
+    height: 8vh;
+    text-align: center;
+    padding-top: 2vh;
+}
