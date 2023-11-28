@@ -1,6 +1,13 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+.card__button--seemore {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .button {
     border: 0.0625rem solid rgb(0, 0, 0);
     border-radius: 1rem;
@@ -75,5 +82,11 @@
             @include mix.button-active(gray, lightgray, white);
         }
     }
+
+
+
+
+
+
 
 }

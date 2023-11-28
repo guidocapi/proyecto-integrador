@@ -8,16 +8,68 @@
     }
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-&__consult{
-    
-}
+.contact {
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
 
-    div{
-        margin: 1vh;
+        &__title {
+            padding-bottom: 3vh;
+            align-self: baseline;
+        }
+
+        &__error {
+            background-color: yellow;
+            border: 3px solid #ff0000;
+            border-radius: 10px;
+            font-weight: bold;
+            color: black;
+            margin: 1vh;
+            padding: 1vh;
+            text-align: center;
+            display: none;
+        }
+
+        &__submit {
+            display: block;
+            margin: auto;
+            margin-top: 3vh;
+            cursor: pointer;
+        }
+
+        &__data {
+            h3 {
+                margin-bottom: 2vh
+            }
+
+            p,
+            ul {
+
+                margin-bottom: 1vh;
+
+            }
+
+            a {
+                margin-bottom: 1vh;
+                color: blue;
+                text-decoration: solid;
+            }
+
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 1.5vh;
+            margin-bottom: 2vh;
+            width: 100%;
+
+        }
     }
 }

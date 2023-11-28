@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.product {
+    width: 50%;
+
+    &__title {
+        padding-bottom: 3vh;
+    }
+
+    &__error {
+        background-color: yellow;
+        border: 3px solid #ff0000;
+        border-radius: 10px;
+        font-weight: bold;
+        color: black;
+        margin: 1vh;
+        padding: 1vh;
+        text-align: center;
+        display: none;
+    }
+
+    &__submit {
+        display: block;
+        margin: auto;
+        margin-top: 3vh;
+        cursor: pointer;
+    }
+}

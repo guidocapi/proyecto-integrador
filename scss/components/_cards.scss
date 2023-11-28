@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+
 .card {
     padding: 1vw;
     background: linear-gradient(rgb(122, 248, 227), rgb(214, 214, 214));
@@ -15,10 +16,10 @@
         width: 22vw;
     }
 
-                &__image:hover {
-                    scale: 1.1;
-                    rotate: 7deg;
-                }
+    &__image:hover {
+        scale: 1.1;
+        rotate: 7deg;
+    }
 
     &__text {
         display: -webkit-box;

@@ -19,6 +19,13 @@ a:visited {
   font-family: "Super Plants";
   src: url("../fonts/super_plants.ttf");
 }
+.card__button--seemore {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .button {
   border: 0.0625rem solid rgb(0, 0, 0);
   border-radius: 1rem;
@@ -239,8 +246,9 @@ body {
   padding-right: 2vw;
   background: linear-gradient(90deg, rgb(231, 231, 231), rgb(136, 136, 136));
   height: 8vh;
-  margin-top: 4vh;
+  margin-top: -4vh;
   margin-bottom: 2vh;
+  width: 100%;
 }
 .main .section__searcher input {
   border-radius: 15px;
@@ -285,13 +293,98 @@ body {
   width: 100%;
 }
 
-.main {
-  padding-left: 1rem;
+main {
+  display: flex;
+  flex-direction: row;
 }
-.main__title {
-  color: red;
+
+.about__info {
+  width: 40%;
 }
-.main__subtitle {
-  padding-top: 1rem;
-  padding-bottom: 0.25rem;
+.about__title {
+  margin-bottom: 4vh;
+}
+.about__subtitle {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.header__image {
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.contact__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact__main__title {
+  padding-bottom: 3vh;
+  align-self: baseline;
+}
+.contact__main__error {
+  background-color: yellow;
+  border: 3px solid #ff0000;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  margin: 1vh;
+  padding: 1vh;
+  text-align: center;
+  display: none;
+}
+.contact__main__submit {
+  display: block;
+  margin: auto;
+  margin-top: 3vh;
+  cursor: pointer;
+}
+.contact__main__data h3 {
+  margin-bottom: 2vh;
+}
+.contact__main__data p,
+.contact__main__data ul {
+  margin-bottom: 1vh;
+}
+.contact__main__data a {
+  margin-bottom: 1vh;
+  color: blue;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.contact__main label {
+  font-weight: bold;
+}
+.contact__main input,
+.contact__main textarea {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5vh;
+  margin-bottom: 2vh;
+  width: 100%;
+}
+
+.product {
+  width: 50%;
+}
+.product__title {
+  padding-bottom: 3vh;
+}
+.product__error {
+  background-color: yellow;
+  border: 3px solid #ff0000;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  margin: 1vh;
+  padding: 1vh;
+  text-align: center;
+  display: none;
+}
+.product__submit {
+  display: block;
+  margin: auto;
+  margin-top: 3vh;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

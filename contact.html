@@ -11,7 +11,7 @@
     <title>Mi Tienda</title>
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
@@ -29,43 +29,67 @@
 
         <img class="header__image" src="./images/slides/contact.jpg" alt="Zapateros trabajando">
     </header>
-    <main class="main">
-        <h1 class="main__title">Contacto</h1>
+    <main class="contact__main">
+        <div class="contact__main__form">
+            <h1 class="contact__main__title">Contacto</h1>
+            <div>
+                <label for="main__fullname">Nombre y apellido</label>
+                <input type="text" id="id-name" name="fullname" placeholder="Ingresa tu nombre y apellido">
+                <span class="contact__main__error">El nombre es incorrecto</span>
+            </div>
+            <div>
+                <label for="main__email">Correo electrónico</label>
+                <input type="email" id="id-email" name="email" placeholder="Ingresa tu correo electrónico">
+                <span class="contact__main__error">El email es incorrecto</span>
+            </div>
 
-        <div>
-            <label for="main__fullname">Nombre y apellido</label>
-            <input type="text" name="fullname" minlength="5" maxlength="35" placeholder="Ingresa tu nombre y apellido"
-                required>
+            <div>
+                <label for="main__tel">Telefono</label>
+                <input type="number" id="id-tel" name="tel" placeholder="Ingresa tu teléfono">
+                <span class="contact__main__error">El teléfono es incorrecto</span>
+            </div>
+
+            <div>
+                <label for="main__consult">Consulta</label>
+                <textarea name="consult" id="id-consultation" cols="40" rows="3" maxlength="90"
+                    placeholder="Ingresa tu consulta"></textarea>
+                <span class="contact__main__error">Debe ingresar una consulta</span>
+            </div>
+
+            <div>
+                <input type="submit" class="main__submit" id="id-validate" value="Enviar datos">
+            </div>
         </div>
+        <div class="contact__main__data">
 
-        <div>
-            <label for="main__email">Correo electrónico</label>
-            <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+            <h3>Pazatillas - Empresa de Calzado</h1>
+                <p>Somos una empresa dedicada a ofrecer calzado de alta calidad.</p>
+                <p><strong>Dirección:</strong> Av. Rivadavia 5200, CABA.</p>
+                <p><strong>Teléfono:</strong> +1234567890</p>
+
+                <p>¡Encuéntranos en nuestras redes sociales!</p>
+                <ul>
+                    <li>Facebook: <a href="https://www.facebook.com/pazatillas">Pazatillas</a></li>
+                    <li>Twitter: <a href="https://twitter.com/pazatillas">pazatillas_tweet</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/pazatillas/">@pazatillas</a></li>
+                </ul>
+
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.394703492384!2d-58.44450156820067!3d-34.62062802334937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses!2sar!4v1701134116182!5m2!1ses!2sar"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
         </div>
-
-        <div>
-            <label for="main__tel">Telephone</label>
-            <input type="number" name="tel" placeholder="Ingresa tu edad">
-        </div>
-
-        <div>
-            <label for="main__consult">Consulta</label>
-            <textarea name="consult" cols="40" rows="3" maxlength="90"
-                placeholder="Ingresa tu consulta"></textarea>
-        </div>
-
-        <div>
-            <input type="submit" value="Enviar datos">
-        </div>
-
-
     </main>
 
     <footer class="footer">
         <p class="footer_text">&copy;2023 Javascript</p>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>
